@@ -1,13 +1,11 @@
 
 package guru.springframework.api.domain;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.annotation.Generated;
-
-@Generated("jsonschema2pojo")
-public class User {
+public class User implements Serializable{
 
     private Integer id;
     private String name;
@@ -18,6 +16,7 @@ public class User {
     private String website;
     private Company company;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private final static long serialVersionUID = 6273338081290557077L;
 
     public Integer getId() {
         return id;

@@ -1,17 +1,16 @@
 
 package guru.springframework.api.domain;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.annotation.Generated;
-
-@Generated("jsonschema2pojo")
-public class Geo {
+public class Geo implements Serializable{
 
     private String lat;
     private String lng;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+    private final static long serialVersionUID = 6577338081292938177L;
 
     public String getLat() {
         return lat;
